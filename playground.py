@@ -260,6 +260,7 @@ def load_sr_model():
 def main():
     print("Loading super resolution model...")
     sr_net = load_sr_model()
+    sr_net.to('cuda')
 
     import time
     input_img_path = "/lustre/projects/Research_Project-T127204/xk219/projects/datasets/tmp/photo.jpg"
