@@ -269,7 +269,6 @@ def main():
     input_img = np.transpose(input_img, [2, 0, 1])
     input_img = torch.from_numpy(input_img).float()
 
-    input_img = torch.from_numpy(input_img).float()
     start = time.time()
     # if not args.no_sr:
     output_img = enhance(sr_net, input_img)
