@@ -265,9 +265,9 @@ def main():
     input_img_path = "/lustre/projects/Research_Project-T127204/xk219/projects/datasets/tmp/photo.jpg"
     input_img = cv2.imread(input_img_path)
     input_img = cv2.resize(input_img, (256, 256))
-    input_img = input_img / 255.
-    input_img = np.transpose(input_img, [2, 0, 1])
-    input_img = torch.from_numpy(input_img).float()
+    # input_img = input_img / 255.
+    # input_img = np.transpose(input_img, [2, 0, 1])
+    # input_img = torch.from_numpy(input_img).float()
 
     start = time.time()
     # if not args.no_sr:
